@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/input1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+            android:textSize="20dp"
+        android:hint="0"
+        android:gravity="center"/>
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="0"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/input1"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="=0"
+            android:layout_toRightOf="@+id/input2"
+            android:layout_toEndOf="@id/input2"
+            android:layout_alignBaseline="@+id/input2"/>
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I Agree"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="+"/>
+        <RadioButton
+            android:id="@+id/dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/plus"
+            android:layout_marginRight="10dp"
+            android:text="-"/>
+        <RadioButton
+            android:id="@+id/multi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dis"
+            android:layout_marginRight="10dp"
+            android:text="*"/>
+        <RadioButton
+            android:id="@+id/diveit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#"
+            android:layout_toRightOf="@+id/multi"
+            android:text="/"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
